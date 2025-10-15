@@ -25,7 +25,7 @@ Branch rebasing and other history modifications will be listed here, with severa
 
 ## Documentation
 - [Overview of Runtime Configurability in VeriStand](https://github.com/ni/Runtime-Configuration-Support-Example/wiki/Reconfigure-parts-of-your-custom-device-in-a-running-VeriStand-system-without-the-need-to-undeploy)
-- [Guide to Utilize Runtime Configurability-in-VeriStand](https://github.com/ni/Runtime-Configuration-Support-Example/wiki/Guide-to-Utilize-Runtime-Configurability-in-VeriStand)
+- [Guide to Utilize Runtime Configurability in VeriStand](https://github.com/ni/Runtime-Configuration-Support-Example/wiki/Guide-to-Utilize-Runtime-Configurability-in-VeriStand)
 - [About Custom Device Example](https://github.com/ni/Runtime-Configuration-Support-Example/wiki/About-Custom-Device-Example)
 - [Accessing Large Number of Variables](https://github.com/ni/Runtime-Configuration-Support-Example/wiki/Accessing-Large-Number-of-Variables)
 - **API Documentation**
