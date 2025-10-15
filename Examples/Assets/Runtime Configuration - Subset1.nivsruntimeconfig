@@ -1,0 +1,264 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SectionDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="SectionDocument.xsd">
+	<Version Major="2020" Minor="0" Fix="0" Build="0" />
+	<Section Name="TestRuntimeConfig" TypeGUID="03D3BD9C-1485-13A6-56C5FB7EB2768A98" Identifier="c9d94ebd-b54d-4d81-bb42-2bafc5cc11ff">
+		<Description />
+		<Properties />
+		<Errors />
+		<Section Name="RuntimeConfiguration" TypeGUID="B3719808-4C47-465D-9F57-EB314FFC301A" Identifier="5d9c5463-499f-43d8-b543-6ca9b15ef260">
+			<Description />
+			<Properties />
+			<Errors />
+			<Channel Name="Inport0" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="f7518d52-9999-4531-8bc4-da9f6531d3c7" RowDim="1" ColDim="1" Units="" BitFields="7">
+				<Description />
+				<Properties>
+					<Property Name="user.CD.SignalID">
+						<I32>0</I32>
+					</Property>
+				</Properties>
+				<Errors />
+				<DefaultValue>
+					<Elem>0</Elem>
+				</DefaultValue>
+			</Channel>
+			<Channel Name="Inport1" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="0918765b-6193-475d-a7ff-46ecc35b0b62" RowDim="1" ColDim="1" Units="" BitFields="7">
+				<Description />
+				<Properties>
+					<Property Name="user.CD.SignalID">
+						<I32>1</I32>
+					</Property>
+				</Properties>
+				<Errors />
+				<DefaultValue>
+					<Elem>0</Elem>
+				</DefaultValue>
+			</Channel>
+			<Channel Name="Inport2" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="efd04437-27b7-4e09-924b-a6dd9aba6c60" RowDim="1" ColDim="1" Units="" BitFields="7">
+				<Description />
+				<Properties>
+					<Property Name="user.CD.SignalID">
+						<I32>2</I32>
+					</Property>
+				</Properties>
+				<Errors />
+				<DefaultValue>
+					<Elem>0</Elem>
+				</DefaultValue>
+			</Channel>
+			<Channel Name="Inport3" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="d3cc58a4-6d31-424f-97e1-1742a3ecac51" RowDim="1" ColDim="1" Units="" BitFields="7">
+				<Description />
+				<Properties>
+					<Property Name="user.CD.SignalID">
+						<I32>3</I32>
+					</Property>
+				</Properties>
+				<Errors />
+				<DefaultValue>
+					<Elem>0</Elem>
+				</DefaultValue>
+			</Channel>
+			<Channel Name="Inport4" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="f5d65e37-7d13-442f-8393-82aadcf7e086" RowDim="1" ColDim="1" Units="" BitFields="7">
+				<Description />
+				<Properties>
+					<Property Name="user.CD.SignalID">
+						<I32>4</I32>
+					</Property>
+				</Properties>
+				<Errors />
+				<DefaultValue>
+					<Elem>0</Elem>
+				</DefaultValue>
+			</Channel>
+			<Channel Name="Outport0" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="e1b1f491-f996-4e18-b878-c72fdcc7786a" RowDim="1" ColDim="1" Units="" BitFields="5">
+				<Description />
+				<Properties>
+					<Property Name="user.CD.SignalID">
+						<I32>0</I32>
+					</Property>
+				</Properties>
+				<Errors />
+				<DefaultValue>
+					<Elem>0</Elem>
+				</DefaultValue>
+			</Channel>
+			<Channel Name="Outport1" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="b4105aa3-5562-4f05-a012-127c17a0953e" RowDim="1" ColDim="1" Units="" BitFields="5">
+				<Description />
+				<Properties>
+					<Property Name="user.CD.SignalID">
+						<I32>1</I32>
+					</Property>
+				</Properties>
+				<Errors />
+				<DefaultValue>
+					<Elem>0</Elem>
+				</DefaultValue>
+			</Channel>
+			<Channel Name="Outport2" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="9a72f121-ea77-460a-85ca-1a45df2fd12c" RowDim="1" ColDim="1" Units="" BitFields="5">
+				<Description />
+				<Properties>
+					<Property Name="user.CD.SignalID">
+						<I32>2</I32>
+					</Property>
+				</Properties>
+				<Errors />
+				<DefaultValue>
+					<Elem>0</Elem>
+				</DefaultValue>
+			</Channel>
+			<Channel Name="Outport3" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="985692a3-34b8-44a3-a2d9-aa5992b3a4ab" RowDim="1" ColDim="1" Units="" BitFields="5">
+				<Description />
+				<Properties>
+					<Property Name="user.CD.SignalID">
+						<I32>3</I32>
+					</Property>
+				</Properties>
+				<Errors />
+				<DefaultValue>
+					<Elem>0</Elem>
+				</DefaultValue>
+			</Channel>
+			<Channel Name="Outport4" TypeGUID="03D3BB99-1485-13A6-561D1F898F032919" Identifier="154ad235-e77c-4597-926a-846721a03870" RowDim="1" ColDim="1" Units="" BitFields="5">
+				<Description />
+				<Properties>
+					<Property Name="user.CD.SignalID">
+						<I32>4</I32>
+					</Property>
+				</Properties>
+				<Errors />
+				<DefaultValue>
+					<Elem>0</Elem>
+				</DefaultValue>
+			</Channel>
+		</Section>
+		<Section Name="Aliases" TypeGUID="e11f4519-09e6-4fb0-99df-2967c4313d67" Identifier="0fe71c38-2550-41a9-a119-c9ff51e730af">
+			<Description />
+			<Properties />
+			<Errors />
+			<Section Name="Set1_Aliases" TypeGUID="A579F6FF-5680-1F22-249C-2C499E16CDB8" Identifier="f033c624-31da-413a-bdc8-765dec93c231">
+				<Description>Alias folder that stores the aliases associated with runtime configurable channels</Description>
+				<Properties />
+				<Errors />
+				<Alias Name="Alias_Inport0" TypeGUID="2c11e122-dad9-44da-989c-a66ff203fa31" Identifier="f821d120-23c0-47d8-af7c-9a32b71a0fb6">
+					<Description />
+					<Properties>
+						<Property Name="Referenced Channel">
+							<DependentNode Path="Inport0" />
+						</Property>
+						<Property Name="Linked Channel">
+							<String>Inport0</String>
+						</Property>
+					</Properties>
+					<Errors />
+				</Alias>
+				<Alias Name="Alias_Inport1" TypeGUID="2c11e122-dad9-44da-989c-a66ff203fa31" Identifier="fae49623-8fc0-473b-90c7-c02a76b74c0a">
+					<Description />
+					<Properties>
+						<Property Name="Referenced Channel">
+							<DependentNode Path="Inport1" />
+						</Property>
+						<Property Name="Linked Channel">
+							<String>Inport1</String>
+						</Property>
+					</Properties>
+					<Errors />
+				</Alias>
+				<Alias Name="Alias_Inport2" TypeGUID="2c11e122-dad9-44da-989c-a66ff203fa31" Identifier="d7bea5c5-8f4b-4c37-a531-0fb144f15b58">
+					<Description />
+					<Properties>
+						<Property Name="Referenced Channel">
+							<DependentNode Path="Inport2" />
+						</Property>
+						<Property Name="Linked Channel">
+							<String>Inport2</String>
+						</Property>
+					</Properties>
+					<Errors />
+				</Alias>
+				<Alias Name="Alias_Inport3" TypeGUID="2c11e122-dad9-44da-989c-a66ff203fa31" Identifier="c8dc0792-3024-45ba-be2a-719df535786e">
+					<Description />
+					<Properties>
+						<Property Name="Referenced Channel">
+							<DependentNode Path="Inport3" />
+						</Property>
+						<Property Name="Linked Channel">
+							<String>Inport3</String>
+						</Property>
+					</Properties>
+					<Errors />
+				</Alias>
+				<Alias Name="Alias_Inport4" TypeGUID="2c11e122-dad9-44da-989c-a66ff203fa31" Identifier="29797a41-9101-4ba8-9e2e-254e1f28acb9">
+					<Description />
+					<Properties>
+						<Property Name="Referenced Channel">
+							<DependentNode Path="Inport4" />
+						</Property>
+						<Property Name="Linked Channel">
+							<String>Inport4</String>
+						</Property>
+					</Properties>
+					<Errors />
+				</Alias>
+				<Alias Name="Alias_Outport0" TypeGUID="2c11e122-dad9-44da-989c-a66ff203fa31" Identifier="702a1a34-4d70-4962-9719-c4c7bfdb3cdf">
+					<Description />
+					<Properties>
+						<Property Name="Referenced Channel">
+							<DependentNode Path="Outport0" />
+						</Property>
+						<Property Name="Linked Channel">
+							<String>Outport0</String>
+						</Property>
+					</Properties>
+					<Errors />
+				</Alias>
+				<Alias Name="Alias_Outport1" TypeGUID="2c11e122-dad9-44da-989c-a66ff203fa31" Identifier="3d2d5a33-fbf7-486a-9684-51bdb6cd22a8">
+					<Description />
+					<Properties>
+						<Property Name="Referenced Channel">
+							<DependentNode Path="Outport1" />
+						</Property>
+						<Property Name="Linked Channel">
+							<String>Outport1</String>
+						</Property>
+					</Properties>
+					<Errors />
+				</Alias>
+				<Alias Name="Alias_Outport2" TypeGUID="2c11e122-dad9-44da-989c-a66ff203fa31" Identifier="06253e2c-83b6-4846-aad5-6c45f389e4e4">
+					<Description />
+					<Properties>
+						<Property Name="Referenced Channel">
+							<DependentNode Path="Outport2" />
+						</Property>
+						<Property Name="Linked Channel">
+							<String>Outport2</String>
+						</Property>
+					</Properties>
+					<Errors />
+				</Alias>
+				<Alias Name="Alias_Outport3" TypeGUID="2c11e122-dad9-44da-989c-a66ff203fa31" Identifier="f37e29d8-4796-45c4-b151-ad010e50fdf9">
+					<Description />
+					<Properties>
+						<Property Name="Referenced Channel">
+							<DependentNode Path="Outport3" />
+						</Property>
+						<Property Name="Linked Channel">
+							<String>Outport3</String>
+						</Property>
+					</Properties>
+					<Errors />
+				</Alias>
+				<Alias Name="Alias_Outport4" TypeGUID="2c11e122-dad9-44da-989c-a66ff203fa31" Identifier="564ab67b-d3ad-478b-813a-6036566d1543">
+					<Description />
+					<Properties>
+						<Property Name="Referenced Channel">
+							<DependentNode Path="Outport4" />
+						</Property>
+						<Property Name="Linked Channel">
+							<String>Outport4</String>
+						</Property>
+					</Properties>
+					<Errors />
+				</Alias>
+			</Section>
+		</Section>
+	</Section>
+</SectionDocument>
