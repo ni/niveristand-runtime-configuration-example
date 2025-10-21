@@ -1,0 +1,35 @@
+# Ignore Visual Studio temporary files, build results, and user-specific files
+.vs/
+*.user
+*.suo
+
+# Build results
+bin/
+obj/
+
+# NuGet packages
+*.nupkg
+packages/
+
+# Logs
+*.log
+
+# Visual Studio cache/options
+*.dbmdl
+
+# Resharper and other add-ons
+_ReSharper*/
+*.DotSettings.user
+
+# Backup and temporary files
+*.bak
+*.tmp
+
+# Ignore publish output
+publish/
+
+# Ignore generated files
+Generated\ Files/
+
+# Ignore Rider IDE files
+.idea/
