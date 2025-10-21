@@ -14,6 +14,7 @@ namespace RuntimeConfigurationExecutionAPIExample
 
         static void ApplyRuntimeConfigurationDemo()
         {
+            // Use the repo path of your local system here
             string repoPath = @"C:\dev\Runtime-Configuration-Support-Example";
             string assetsPath = $@"{repoPath}\Examples\Assets";
             string systemDefinitionPath = $@"{assetsPath}\RuntimeConfiguationDemo.nivssdf";
@@ -37,9 +38,6 @@ namespace RuntimeConfigurationExecutionAPIExample
             IWorkspace2 Workspace = FacRef.GetIWorkspace2("localhost");
             Error err;
 
-            // Querying Runtime Configuration Status
-            GetAndPrintAllActiveRuntimeConfigurationStatus();
-
             // Attempt to retrieve channel values before configuration - expected to fail
             err = Workspace.GetSingleChannelValue(configuredInputChannelNames_Subset1[0], out double channelVal);
             if (err.IsError) Console.WriteLine("As expected, unable to get channel value before applying runtime configuration.");
@@ -52,9 +50,6 @@ namespace RuntimeConfigurationExecutionAPIExample
             IRuntimeConfigurationManager RuntimeConfigurationManager = FacRef.GetIRuntimeConfigurationManager("localhost");
             err = RuntimeConfigurationManager.ApplyConfigurationToCustomDevice(runtimeConfigurableSectionPath, configFilePath_Subset1);
             ErrChk(err, "ApplyConfigurationToCustomDevice - Subset1");
-
-            // Querying Runtime Configuration Status
-            GetAndPrintRuntimeConfigurationStatus(runtimeConfigurableSectionPath);
 
             // Set and retrieve multiple channel values using the Client API - channels are now configured
             double[] InputValues = { 1, 2, 3, 4, 5 };
@@ -73,9 +68,6 @@ namespace RuntimeConfigurationExecutionAPIExample
             err = RuntimeConfigurationManager.ApplyConfigurationToCustomDevice(runtimeConfigurableSectionPath, configFilePath_Subset2);
             ErrChk(err, "ApplyConfigurationToCustomDevice - Subset2");
 
-            // Querying Runtime Configuration Status
-            GetAndPrintAllActiveRuntimeConfigurationStatus();
-
             // Attempt to set or retrieve previously configured channel values using Client API - expected to fail
             err = Workspace.GetSingleChannelValue(configuredInputChannelNames_Subset1[0], out channelVal);
             if (err.IsError) Console.WriteLine("As expected, unable to get channel value of previously applied runtime configuration.");
@@ -90,15 +82,9 @@ namespace RuntimeConfigurationExecutionAPIExample
             DisplayChannelValues(configuredInputChannelNames_Subset2.Take(5).ToArray(), inputValues_Subset2, "Input Values - Subset2");
             DisplayChannelValues(configuredOutputChannelNames_Subset2.Take(5).ToArray(), outputValues_Subset2, "Output Values - Subset2");
 
-            // Get and print all the aliases
-            GetAndPrintAliases(Workspace);
-
             // Remove the current configuration
             err = RuntimeConfigurationManager.RemoveConfigurationFromCustomDevice(runtimeConfigurableSectionPath);
             ErrChk(err, "RemoveConfigurationFromCustomDevice");
-
-            // Querying Runtime Configuration Status
-            GetAndPrintRuntimeConfigurationStatus(runtimeConfigurableSectionPath);
 
             // Attempt to set or retrieve old channel values using Client API - expected to fail
             err = Workspace.GetSingleChannelValue(configuredInputChannelNames_Subset2[0], out channelVal);
@@ -232,51 +218,6 @@ namespace RuntimeConfigurationExecutionAPIExample
                 for (int i = 0; i < aliasNames.Length; i++)
                     Console.WriteLine($"| {aliasNames[i]} | {linkedChannels[i]} | {values[i]} |");
                 Console.WriteLine();
-            }
-            Console.WriteLine();
-        }
-
-        static void GetAndPrintRuntimeConfigurationStatus(string runtimeConfigurableSectionPath)
-        {
-            Factory FacRef = new Factory();
-            IRuntimeConfigurationManager RuntimeConfigurationManager = FacRef.GetIRuntimeConfigurationManager("localhost");
-
-            var err = RuntimeConfigurationManager.GetActiveConfiguration(runtimeConfigurableSectionPath, out string configurationFilePath, out string configurationFileMD5Checksum);
-            ErrChk(err, "Get Active Runtime Configuration Status");
-
-            if (configurationFilePath.Length == 0)
-            {
-                Console.WriteLine($"No RuntimeConfiguration is applied on {runtimeConfigurableSectionPath}");
-            }
-            else
-            {
-                Console.WriteLine("Active Configuration Details:");
-                Console.WriteLine("| Runtime Configurable Section | Configuration File Path | Configuration File MD5 Checksum |");
-                Console.WriteLine("| ---------------------------- | ----------------------- | ------------------------------- |");
-                Console.WriteLine($"| {runtimeConfigurableSectionPath} | {configurationFilePath} | {configurationFileMD5Checksum} |");
-            }
-            Console.WriteLine();
-        }
-        static void GetAndPrintAllActiveRuntimeConfigurationStatus()
-        {
-            Factory FacRef = new Factory();
-            IRuntimeConfigurationManager RuntimeConfigurationManager = FacRef.GetIRuntimeConfigurationManager("localhost");
-
-            var err = RuntimeConfigurationManager.GetActiveConfigurationList(out string[] runtimeConfigurableSectionPaths, out string[] configurationFilePaths, out string[] configurationFileMD5Checksums);
-            ErrChk(err, "Get Active Runtime Configuration List Status");
-            if (runtimeConfigurableSectionPaths.Length == 0)
-            {
-                Console.WriteLine("No Active Runtime Configuration");
-            }
-            else
-            {
-                Console.WriteLine("Active Configuration Details:");
-                Console.WriteLine("| Runtime Configurable Section | Configuration File Path | Configuration File MD5 Checksum |");
-                Console.WriteLine("| ---------------------------- | ----------------------- | ------------------------------- |");
-                for (int i = 0; i < runtimeConfigurableSectionPaths.Length; i++)
-                {
-                    Console.WriteLine($"| {runtimeConfigurableSectionPaths[i]} | {configurationFilePaths[i]} | {configurationFileMD5Checksums[i]} |");
-                }
             }
             Console.WriteLine();
         }
