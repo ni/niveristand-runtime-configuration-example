@@ -32,13 +32,22 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <VeristandVersion>2025</VeristandVersion>
+    <VeriStandDir>c:\Program Files\National Instruments\VeriStand $(VeristandVersion)</VeriStandDir>
+  </PropertyGroup>
   <ItemGroup>
-    <Reference Include="NationalInstruments.VeriStand, Version=13.0.0.0, Culture=neutral, PublicKeyToken=a6d690c380daa308, processorArchitecture=MSIL" />
-    <Reference Include="NationalInstruments.VeriStand.ClientAPI, Version=13.0.0.0, Culture=neutral, PublicKeyToken=a6d690c380daa308, processorArchitecture=MSIL" />
-    <Reference Include="NationalInstruments.VeriStand.SystemDefinitionAPI, Version=13.0.0.0, Culture=neutral, PublicKeyToken=a6d690c380daa308, processorArchitecture=MSIL" />
-    <Reference Include="NationalInstruments.VeriStand.SystemStorage, Version=13.0.0.0, Culture=neutral, PublicKeyToken=a6d690c380daa308, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\Program Files\National Instruments\VeriStand 2026\NationalInstruments.VeriStand.SystemStorage.dll</HintPath>
+    <Reference Include="NationalInstruments.VeriStand">
+      <HintPath>$(VeriStandDir)\NationalInstruments.VeriStand.dll</HintPath>
+    </Reference>
+    <Reference Include="NationalInstruments.VeriStand.ClientAPI">
+      <HintPath>$(VeriStandDir)\NationalInstruments.VeriStand.ClientAPI.dll</HintPath>
+    </Reference>
+    <Reference Include="NationalInstruments.VeriStand.SystemDefinitionAPI">
+      <HintPath>$(VeriStandDir)\NationalInstruments.VeriStand.SystemDefinitionAPI.dll</HintPath>
+    </Reference>
+    <Reference Include="NationalInstruments.VeriStand.SystemStorage">
+      <HintPath>$(VeriStandDir)\NationalInstruments.VeriStand.SystemStorage.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
