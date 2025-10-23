@@ -15,7 +15,7 @@ namespace RuntimeConfigurationExecutionAPIExample
         static void ApplyRuntimeConfigurationDemo()
         {
             // Use the repo path of your local system here
-            string repoPath = @"C:\dev\Runtime-Configuration-Support-Example";
+            string repoPath = @"C:\dev\niveristand-runtime-configuration-example";
             string assetsPath = $@"{repoPath}\Examples\Assets";
             string systemDefinitionPath = $@"{assetsPath}\RuntimeConfiguationDemo.nivssdf";
             string runtimeConfigurableSectionPath = "Targets/Controller/Custom Devices/Runtime Configuration Support Demo/RuntimeConfiguration";
