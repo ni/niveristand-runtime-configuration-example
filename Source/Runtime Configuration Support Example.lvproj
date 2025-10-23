@@ -35,6 +35,7 @@
 		<Item Name="HW Operations.ctl" Type="VI" URL="../Engine/HW Operations.ctl"/>
 		<Item Name="Runtime Configuration Support Example System Explorer.lvlib" Type="Library" URL="../System Explorer/Runtime Configuration Support Example System Explorer.lvlib"/>
 		<Item Name="Custom Device Runtime Configuration Support Example.XML" Type="Document" URL="../Custom Device Runtime Configuration Support Example.XML"/>
+		<Item Name="NI_VS RuntimeConfigurationFile ScriptingAPI.lvlib" Type="Library" URL="../Scripting/NI_VS RuntimeConfigurationFile ScriptingAPI.lvlib"/>
 		<Item Name="Dependencies" Type="Dependencies"/>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="Configuration Debug" Type="Source Distribution">
@@ -257,6 +258,57 @@
 				<Property Name="Source[4].properties[4].value" Type="Bool">true</Property>
 				<Property Name="Source[4].propertiesCount" Type="Int">5</Property>
 				<Property Name="Source[4].type" Type="Str">Container</Property>
+				<Property Name="SourceCount" Type="Int">5</Property>
+			</Item>
+			<Item Name="Scripting API" Type="Source Distribution">
+				<Property Name="Bld_autoIncrement" Type="Bool">true</Property>
+				<Property Name="Bld_buildCacheID" Type="Str">{077FC30A-DC0E-450C-B7C0-A9ED01B5AE07}</Property>
+				<Property Name="Bld_buildSpecName" Type="Str">Scripting API</Property>
+				<Property Name="Bld_excludedDirectory[0]" Type="Path">vi.lib</Property>
+				<Property Name="Bld_excludedDirectory[0].pathType" Type="Str">relativeToAppDir</Property>
+				<Property Name="Bld_excludedDirectory[1]" Type="Path">resource/objmgr</Property>
+				<Property Name="Bld_excludedDirectory[1].pathType" Type="Str">relativeToAppDir</Property>
+				<Property Name="Bld_excludedDirectory[2]" Type="Path">/C/ProgramData/National Instruments/InstCache/25.0</Property>
+				<Property Name="Bld_excludedDirectory[3]" Type="Path">/C/Users/kperiyas/Documents/LabVIEW Data/2025(64-bit)/ExtraVILib</Property>
+				<Property Name="Bld_excludedDirectory[4]" Type="Path">instr.lib</Property>
+				<Property Name="Bld_excludedDirectory[4].pathType" Type="Str">relativeToAppDir</Property>
+				<Property Name="Bld_excludedDirectory[5]" Type="Path">user.lib</Property>
+				<Property Name="Bld_excludedDirectory[5].pathType" Type="Str">relativeToAppDir</Property>
+				<Property Name="Bld_excludedDirectoryCount" Type="Int">6</Property>
+				<Property Name="Bld_localDestDir" Type="Path">../Built/NI_AB_PROJECTNAME/Scripting API</Property>
+				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
+				<Property Name="Bld_previewCacheID" Type="Str">{72DE2559-FEA0-472C-B433-6E2526F1AE54}</Property>
+				<Property Name="Bld_removeVIObj" Type="Int">1</Property>
+				<Property Name="Bld_version.build" Type="Int">1</Property>
+				<Property Name="Bld_version.major" Type="Int">1</Property>
+				<Property Name="Destination[0].destName" Type="Str">Destination Directory</Property>
+				<Property Name="Destination[0].path" Type="Path">../Built/NI_AB_PROJECTNAME/Scripting API</Property>
+				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
+				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
+				<Property Name="Destination[1].path" Type="Path">../Built/NI_AB_PROJECTNAME/Scripting API/data</Property>
+				<Property Name="DestinationCount" Type="Int">2</Property>
+				<Property Name="Source[0].itemID" Type="Str">{18FE353B-1BA4-4C95-8E84-5B7CEEEE956D}</Property>
+				<Property Name="Source[0].type" Type="Str">Container</Property>
+				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Runtime Configuration Support Example Engine.lvlib</Property>
+				<Property Name="Source[1].Library.allowMissingMembers" Type="Bool">true</Property>
+				<Property Name="Source[1].sourceInclusion" Type="Str">Exclude</Property>
+				<Property Name="Source[1].type" Type="Str">Library</Property>
+				<Property Name="Source[2].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[2].itemID" Type="Ref">/My Computer/Runtime Configuration Support Example Shared.lvlib</Property>
+				<Property Name="Source[2].Library.allowMissingMembers" Type="Bool">true</Property>
+				<Property Name="Source[2].sourceInclusion" Type="Str">Exclude</Property>
+				<Property Name="Source[2].type" Type="Str">Library</Property>
+				<Property Name="Source[3].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[3].itemID" Type="Ref">/My Computer/Runtime Configuration Support Example System Explorer.lvlib</Property>
+				<Property Name="Source[3].Library.allowMissingMembers" Type="Bool">true</Property>
+				<Property Name="Source[3].sourceInclusion" Type="Str">Exclude</Property>
+				<Property Name="Source[3].type" Type="Str">Library</Property>
+				<Property Name="Source[4].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[4].itemID" Type="Ref">/My Computer/NI_VS RuntimeConfigurationFile ScriptingAPI.lvlib</Property>
+				<Property Name="Source[4].Library.allowMissingMembers" Type="Bool">true</Property>
+				<Property Name="Source[4].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[4].type" Type="Str">Library</Property>
 				<Property Name="SourceCount" Type="Int">5</Property>
 			</Item>
 		</Item>
