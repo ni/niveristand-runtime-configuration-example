@@ -189,7 +189,7 @@
 					<Description />
 					<Properties />
 					<Errors />
-					<Section Name="Runtime Configuration Support Demo" TypeGUID="178d50a5-e24e-4ba6-a745-fa81ee8bee2b" Identifier="d5e5494c-970f-4243-a281-a7b57ed53999">
+					<Section Name="Runtime Configuration Support Example" TypeGUID="178d50a5-e24e-4ba6-a745-fa81ee8bee2b" Identifier="d5e5494c-970f-4243-a281-a7b57ed53999">
 						<Description />
 						<Properties>
 							<Property Name="CD Status">
@@ -199,19 +199,19 @@
 								<U32>1</U32>
 							</Property>
 							<Property Name="Driver VI Path_0">
-								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\Runtime Configuration Support Demo\Linux_x64\Runtime Configuration Support Demo Engine Linux64.llb\RT Driver VI.vi">
+								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\Runtime Configuration Support Example\Linux_x64\Runtime Configuration Support Example Engine Linux64.llb\RT Driver VI.vi">
 									<Version>1.0.0</Version>
 									<ForceDownload>false</ForceDownload>
-									<RTDestination>c:\ni-rt\VeriStand\Custom Devices\Runtime Configuration Support Demo\Runtime Configuration Support Demo Engine Linux64.llb\RT Driver VI.vi</RTDestination>
+									<RTDestination>c:\ni-rt\VeriStand\Custom Devices\Runtime Configuration Support Example\Runtime Configuration Support Example Engine Linux64.llb\RT Driver VI.vi</RTDestination>
 									<SupportedTarget>Linux_x64</SupportedTarget>
 									<MD5 />
 								</DependentFile>
 							</Property>
 							<Property Name="Driver VI Path_1">
-								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\Runtime Configuration Support Demo\Windows\Runtime Configuration Support Demo Engine Windows.llb\RT Driver VI.vi">
+								<DependentFile Type="To Common Doc Dir" Path="Custom Devices\Runtime Configuration Support Example\Windows\Runtime Configuration Support Example Engine Windows.llb\RT Driver VI.vi">
 									<Version>1.0.0</Version>
 									<ForceDownload>false</ForceDownload>
-									<RTDestination>c:\ni-rt\VeriStand\Custom Devices\Runtime Configuration Support Demo\Runtime Configuration Support Demo Engine Windows.llb\RT Driver VI.vi</RTDestination>
+									<RTDestination>c:\ni-rt\VeriStand\Custom Devices\Runtime Configuration Support Example\Runtime Configuration Support Example Engine Windows.llb\RT Driver VI.vi</RTDestination>
 									<SupportedTarget>Windows</SupportedTarget>
 									<MD5 />
 								</DependentFile>

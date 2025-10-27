@@ -18,7 +18,7 @@ namespace RuntimeConfigurationExecutionAPIExample
             string repoPath = @"C:\dev\niveristand-runtime-configuration-example";
             string assetsPath = $@"{repoPath}\Examples\Assets";
             string systemDefinitionPath = $@"{assetsPath}\RuntimeConfiguationDemo.nivssdf";
-            string runtimeConfigurableSectionPath = "Targets/Controller/Custom Devices/Runtime Configuration Support Demo/RuntimeConfiguration";
+            string runtimeConfigurableSectionPath = "Targets/Controller/Custom Devices/Runtime Configuration Support Example/RuntimeConfiguration";
             string configFilePath_Subset1 = $@"{assetsPath}\Runtime Configuration - Subset1.nivsruntimeconfig";
             string configFilePath_Subset2 = $@"{assetsPath}\Runtime Configuration - Subset2.nivsruntimeconfig";
             List<string> configuredInputChannelNames_Subset1 = GetInputChannelNames(configFilePath_Subset1, runtimeConfigurableSectionPath);
