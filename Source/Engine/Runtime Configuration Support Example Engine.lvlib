@@ -30,6 +30,7 @@
 		<Item Name="Apply Config.vi" Type="VI" URL="../Apply Config.vi"/>
 		<Item Name="Convert To Driver DataType.vi" Type="VI" URL="../Convert To Driver DataType.vi"/>
 		<Item Name="Set Variables.vi" Type="VI" URL="../Set Variables.vi"/>
+		<Item Name="Validate Dynamic Config.vi" Type="VI" URL="../Validate Dynamic Config.vi"/>
 	</Item>
 	<Item Name="Command Loop.vi" Type="VI" URL="../Command Loop.vi"/>
 	<Item Name="RT Driver VI.vi" Type="VI" URL="../RT Driver VI.vi"/>
