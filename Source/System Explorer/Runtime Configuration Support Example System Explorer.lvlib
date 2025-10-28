@@ -15,6 +15,7 @@
 			<Item Name="Main Page.vi" Type="VI" URL="../Main Page.vi"/>
 		</Item>
 		<Item Name="SubVIs" Type="Folder">
+			<Item Name="Error Constants.vi" Type="VI" URL="../Error Constants.vi"/>
 			<Item Name="Load Help File.vi" Type="VI" URL="../Load Help File.vi"/>
 		</Item>
 		<Item Name="Types" Type="Folder"/>
