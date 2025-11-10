@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomDevice xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Custom Device.xsd">
+  <XSDVersion Major="2010" Minor="0" Fix="0" Build="0" />
+  <AddMenu>
+    <eng>Runtime Configuration Support Inline Async Example</eng>
+    <loc>Runtime Configuration Support Inline Async Example</loc>
+  </AddMenu>
+  <Version>1.0.0</Version>
+  <Type>Inline HW Interface</Type>
+  <MaxOccurrence>-1</MaxOccurrence>
+  <MainPageGUID>c91d0164-4b12-4160-bc5c-7f83ec49af3c</MainPageGUID>
+  <InitializationVI>
+    <Type>Action</Type>
+    <Item2Launch>
+      <Type>To Common Doc Dir</Type>
+      <Path>Custom Devices\Runtime Configuration Support Inline Async Example\Windows\Runtime Configuration Support Inline Async Example Configuration.llb\Initialization VI.vi</Path>
+    </Item2Launch>
+  </InitializationVI>
+  <CustomDeviceVI>
+    <SourceDistribution>
+      <Source>
+        <SupportedTarget>Windows</SupportedTarget>
+        <Source>
+          <Type>To Common Doc Dir</Type>
+          <Path>Custom Devices\Runtime Configuration Support Inline Async Example\Windows\Runtime Configuration Support Inline Async Example Engine Windows.llb\RT Driver VI.vi</Path>
+        </Source>
+        <RealTimeSystemDestination>c:\ni-rt\VeriStand\Custom Devices\Runtime Configuration Support Inline Async Example\Runtime Configuration Support Inline Async Example Engine Windows.llb\RT Driver VI.vi</RealTimeSystemDestination>
+      </Source>
+      <Source>
+        <SupportedTarget>Linux_x64</SupportedTarget>
+        <Source>
+          <Type>To Common Doc Dir</Type>
+          <Path>Custom Devices\Runtime Configuration Support Inline Async Example\Linux_x64\Runtime Configuration Support Inline Async Example Engine Linux64.llb\RT Driver VI.vi</Path>
+        </Source>
+        <RealTimeSystemDestination>c:\ni-rt\VeriStand\Custom Devices\Runtime Configuration Support Inline Async Example\Runtime Configuration Support Inline Async Example Engine Linux64.llb\RT Driver VI.vi</RealTimeSystemDestination>
+      </Source>
+    </SourceDistribution>
+  </CustomDeviceVI>
+  <Dependencies />
+  <Pages>
+    <Page>
+      <Name>
+        <eng>Runtime Configuration Support Inline Async Example</eng>
+        <loc>Runtime Configuration Support Inline Async Example</loc>
+      </Name>
+      <GUID>c91d0164-4b12-4160-bc5c-7f83ec49af3c</GUID>
+      <Glyph>
+        <Type>To Application Data Dir</Type>
+        <Path>System Explorer\Glyphs\default fpga category.png</Path>
+      </Glyph>
+      <Item2Launch>
+        <Type>To Common Doc Dir</Type>
+        <Path>Custom Devices\Runtime Configuration Support Inline Async Example\Windows\Runtime Configuration Support Inline Async Example Configuration.llb\Main Page.vi</Path>
+      </Item2Launch>
+      <RunTimeMenu>
+        <MenuItem>
+          <GUID>bbf7d37a-0302-4080-a8e8-a73badf3d1f3</GUID>
+          <Type>Action</Type>
+          <Execution>silent</Execution>
+          <Name>
+            <eng>Export Configuration</eng>
+            <loc>Export Configuration</loc>
+          </Name>
+          <Item2Launch>
+            <Type>To Common Doc Dir</Type>
+            <Path>Custom Devices\Runtime Configuration Support Inline Async Example\Windows\Runtime Configuration Support Inline Async Example Configuration.llb\Export Configuration RTM.vi</Path>
+          </Item2Launch>
+        </MenuItem>
+        <MenuItem>
+          <GUID>0603c2e4-aae2-4443-899a-a3118b88b016</GUID>
+          <Type>Action</Type>
+          <Name>
+            <eng>Add Runtime Configurable Section</eng>
+            <loc>Add Runtime Configurable Section</loc>
+          </Name>
+          <Item2Launch>
+            <Type>To Common Doc Dir</Type>
+            <Path>Custom Devices\Runtime Configuration Support Inline Async Example\Windows\Runtime Configuration Support Inline Async Example Configuration.llb\Add Runtime Configurable Section.vi</Path>
+          </Item2Launch>
+        </MenuItem>
+      </RunTimeMenu>
+      <ButtonList>
+        <Button>
+          <ID>bbf7d37a-0302-4080-a8e8-a73badf3d1f3-Button</ID>
+          <Glyph>
+            <Type>To Application Data Dir</Type>
+            <Path>System Explorer\Glyphs\Export.png</Path>
+          </Glyph>
+          <Type>Action</Type>
+          <ReferencedGUID>bbf7d37a-0302-4080-a8e8-a73badf3d1f3</ReferencedGUID>
+          <ButtonText>
+            <eng>Export Configuration</eng>
+            <loc>Export Configuration</loc>
+          </ButtonText>
+          <Caption>
+            <eng>Export Configuration</eng>
+            <loc>Export Configuration</loc>
+          </Caption>
+          <TipStrip>
+            <eng>Export Custom Device Configuration</eng>
+            <loc>Export Custom Device Configuration</loc>
+          </TipStrip>
+          <Documentation>
+            <eng>Export Custom Device Configuration</eng>
+            <loc>Export Custom Device Configuration</loc>
+          </Documentation>
+        </Button>
+      </ButtonList>
+        <ActionVIOnCompile>
+        <Type>To Common Doc Dir</Type>
+        <Path>Custom Devices\Runtime Configuration Support Inline Async Example\Windows\Runtime Configuration Support Inline Async Example Configuration.llb\ActionVIOnCompile.vi</Path>
+      </ActionVIOnCompile>
+	<ActionVIOnRecompile>
+        <Type>To Common Doc Dir</Type>
+        <Path>Custom Devices\Runtime Configuration Support Inline Async Example\Windows\Runtime Configuration Support Inline Async Example Configuration.llb\ActionVIOnRecompile.vi</Path>
+      </ActionVIOnRecompile>
+    </Page>
+  </Pages>
+  <CustomXML>
+    <Dummy></Dummy>
+  </CustomXML>
+</CustomDevice>
