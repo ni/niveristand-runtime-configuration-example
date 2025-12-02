@@ -14,7 +14,5 @@
 		<Item Name="NI VeriStand - Create and Load Runtime Configuration File.vi" Type="VI" URL="../NI VeriStand - Create and Load Runtime Configuration File.vi"/>
 		<Item Name="NI VeriStand - Load Runtime Configuration File.vi" Type="VI" URL="../NI VeriStand - Load Runtime Configuration File.vi"/>
 	</Item>
-	<Item Name="NI VeriStand - Add Channel Under Section.vi" Type="VI" URL="../NI VeriStand - Add Channel Under Section.vi"/>
-	<Item Name="NI VeriStand - Create Channel.vi" Type="VI" URL="../NI VeriStand - Create Channel.vi"/>
-	<Item Name="NI VeriStand - Create Section.vi" Type="VI" URL="../NI VeriStand - Create Section.vi"/>
+	<Item Name="NI VeriStand - Get Custom Device Runtime Configuration Ref.vi" Type="VI" URL="../NI VeriStand - Get Custom Device Runtime Configuration Ref.vi"/>
 </Library>
