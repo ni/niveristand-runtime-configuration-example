@@ -25,6 +25,7 @@ namespace RuntimeConfigurationExecutionAPIExample
             List<string> configuredOutputChannelNames_Subset1 = GetOutputChannelNames(configFilePath_Subset1, runtimeConfigurableSectionPath);
             List<string> configuredInputChannelNames_Subset2 = GetInputChannelNames(configFilePath_Subset2, runtimeConfigurableSectionPath);
             List<string> configuredOutputChannelNames_Subset2 = GetOutputChannelNames(configFilePath_Subset2, runtimeConfigurableSectionPath);
+            uint timeout = 5000; // in milliseconds
 
             // Start Gateway
             StartGateway();
@@ -48,7 +49,7 @@ namespace RuntimeConfigurationExecutionAPIExample
 
             // Use the Newly added IRuntimeConfigurationManager interface to apply the configuration
             IRuntimeConfigurationManager RuntimeConfigurationManager = FacRef.GetIRuntimeConfigurationManager("localhost");
-            err = RuntimeConfigurationManager.ApplyConfigurationToCustomDevice(runtimeConfigurableSectionPath, configFilePath_Subset1, 5000);
+            err = RuntimeConfigurationManager.ApplyConfigurationToCustomDevice(runtimeConfigurableSectionPath, configFilePath_Subset1, timeout);
             ErrChk(err, "ApplyConfigurationToCustomDevice - Subset1");
 
             // Set and retrieve multiple channel values using the Client API - channels are now configured
@@ -65,7 +66,7 @@ namespace RuntimeConfigurationExecutionAPIExample
             GetAndPrintAliases(Workspace);
 
             // Reapply the configuration - Removes previously applied configuration and applies the new configuration
-            err = RuntimeConfigurationManager.ApplyConfigurationToCustomDevice(runtimeConfigurableSectionPath, configFilePath_Subset2, 5000);
+            err = RuntimeConfigurationManager.ApplyConfigurationToCustomDevice(runtimeConfigurableSectionPath, configFilePath_Subset2, timeout);
             ErrChk(err, "ApplyConfigurationToCustomDevice - Subset2");
 
             // Attempt to set or retrieve previously configured channel values using Client API - expected to fail
@@ -83,7 +84,7 @@ namespace RuntimeConfigurationExecutionAPIExample
             DisplayChannelValues(configuredOutputChannelNames_Subset2.Take(5).ToArray(), outputValues_Subset2, "Output Values - Subset2");
 
             // Remove the current configuration
-            err = RuntimeConfigurationManager.RemoveConfigurationFromCustomDevice(runtimeConfigurableSectionPath, 5000);
+            err = RuntimeConfigurationManager.RemoveConfigurationFromCustomDevice(runtimeConfigurableSectionPath, timeout);
             ErrChk(err, "RemoveConfigurationFromCustomDevice");
 
             // Attempt to set or retrieve old channel values using Client API - expected to fail
