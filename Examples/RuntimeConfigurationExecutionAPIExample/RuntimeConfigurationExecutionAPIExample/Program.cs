@@ -48,7 +48,7 @@ namespace RuntimeConfigurationExecutionAPIExample
 
             // Use the Newly added IRuntimeConfigurationManager interface to apply the configuration
             IRuntimeConfigurationManager RuntimeConfigurationManager = FacRef.GetIRuntimeConfigurationManager("localhost");
-            err = RuntimeConfigurationManager.ApplyConfigurationToCustomDevice(runtimeConfigurableSectionPath, configFilePath_Subset1);
+            err = RuntimeConfigurationManager.ApplyConfigurationToCustomDevice(runtimeConfigurableSectionPath, configFilePath_Subset1, 5000);
             ErrChk(err, "ApplyConfigurationToCustomDevice - Subset1");
 
             // Set and retrieve multiple channel values using the Client API - channels are now configured
@@ -65,7 +65,7 @@ namespace RuntimeConfigurationExecutionAPIExample
             GetAndPrintAliases(Workspace);
 
             // Reapply the configuration - Removes previously applied configuration and applies the new configuration
-            err = RuntimeConfigurationManager.ApplyConfigurationToCustomDevice(runtimeConfigurableSectionPath, configFilePath_Subset2);
+            err = RuntimeConfigurationManager.ApplyConfigurationToCustomDevice(runtimeConfigurableSectionPath, configFilePath_Subset2, 5000);
             ErrChk(err, "ApplyConfigurationToCustomDevice - Subset2");
 
             // Attempt to set or retrieve previously configured channel values using Client API - expected to fail
@@ -83,7 +83,7 @@ namespace RuntimeConfigurationExecutionAPIExample
             DisplayChannelValues(configuredOutputChannelNames_Subset2.Take(5).ToArray(), outputValues_Subset2, "Output Values - Subset2");
 
             // Remove the current configuration
-            err = RuntimeConfigurationManager.RemoveConfigurationFromCustomDevice(runtimeConfigurableSectionPath);
+            err = RuntimeConfigurationManager.RemoveConfigurationFromCustomDevice(runtimeConfigurableSectionPath, 5000);
             ErrChk(err, "RemoveConfigurationFromCustomDevice");
 
             // Attempt to set or retrieve old channel values using Client API - expected to fail
