@@ -10,7 +10,7 @@
 				<String>RuntimeConfiguationDemo</String>
 			</Property>
 			<Property Name="Version">
-				<String>1.0.0.5</String>
+				<String>1.0.0.11</String>
 			</Property>
 			<Property Name="Creator">
 				<String />
@@ -189,7 +189,7 @@
 					<Description />
 					<Properties />
 					<Errors />
-					<Section Name="Runtime Configuration Support Example" TypeGUID="178d50a5-e24e-4ba6-a745-fa81ee8bee2b" Identifier="d5e5494c-970f-4243-a281-a7b57ed53999">
+					<Section Name="Runtime Configuration Support Example" TypeGUID="9c50e764-8e21-40d4-9c84-c31c997b404b" Identifier="dd35b5c7-e2da-4e3f-b45e-6ecc196f4573">
 						<Description />
 						<Properties>
 							<Property Name="CD Status">
@@ -221,7 +221,7 @@
 							</Property>
 						</Properties>
 						<Errors />
-						<Section Name="RuntimeConfiguration" TypeGUID="B3719808-4C47-465D-9F57-EB314FFC301A" Identifier="036f1cf4-ded5-44a8-9ce4-3a9aca7fd0c9">
+						<Section Name="Runtime Configuration" TypeGUID="B3719808-4C47-465D-9F57-EB314FFC301A" Identifier="97ff6ca5-d8c6-40ed-bb47-1decb138639a">
 							<Description />
 							<Properties>
 								<Property Name="ReservedChannelCapacity">
