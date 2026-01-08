@@ -28,6 +28,7 @@
 		</Item>
 		<Item Name="Utility" Type="Folder">
 			<Item Name="Copy .LLB to NI VeriStand dir.vi" Type="VI" URL="../Utility/Copy .LLB to NI VeriStand dir.vi"/>
+			<Item Name="Log.vi" Type="VI" URL="../Utility/Log.vi"/>
 		</Item>
 		<Item Name="Custom Device Runtime Configuration Support Inline Async Example Custom Device.xml" Type="Document" URL="../Custom Device Runtime Configuration Support Inline Async Example Custom Device.xml"/>
 		<Item Name="Runtime Configuration Support Inline Async Example Custom Device Engine.lvlib" Type="Library" URL="../Engine/Runtime Configuration Support Inline Async Example Custom Device Engine.lvlib"/>
