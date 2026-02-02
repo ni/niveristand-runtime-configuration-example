@@ -18,13 +18,14 @@ namespace RuntimeConfigurationExecutionAPIExample
             string repoPath = @"C:\dev\niveristand-runtime-configuration-example";
             string assetsPath = $@"{repoPath}\Examples\Assets";
             string systemDefinitionPath = $@"{assetsPath}\RuntimeConfiguationDemo.nivssdf";
-            string runtimeConfigurableSectionPath = "Targets/Controller/Custom Devices/Runtime Configuration Support Example/RuntimeConfiguration";
+            string runtimeConfigurableSectionPath = "Targets/Controller/Custom Devices/Runtime Configuration Support Example/Runtime Configuration";
             string configFilePath_Subset1 = $@"{assetsPath}\Runtime Configuration - Subset1.nivsruntimeconfig";
             string configFilePath_Subset2 = $@"{assetsPath}\Runtime Configuration - Subset2.nivsruntimeconfig";
             List<string> configuredInputChannelNames_Subset1 = GetInputChannelNames(configFilePath_Subset1, runtimeConfigurableSectionPath);
             List<string> configuredOutputChannelNames_Subset1 = GetOutputChannelNames(configFilePath_Subset1, runtimeConfigurableSectionPath);
             List<string> configuredInputChannelNames_Subset2 = GetInputChannelNames(configFilePath_Subset2, runtimeConfigurableSectionPath);
             List<string> configuredOutputChannelNames_Subset2 = GetOutputChannelNames(configFilePath_Subset2, runtimeConfigurableSectionPath);
+            uint timeout = 5000; // in milliseconds
 
             // Start Gateway
             StartGateway();
@@ -48,7 +49,7 @@ namespace RuntimeConfigurationExecutionAPIExample
 
             // Use the Newly added IRuntimeConfigurationManager interface to apply the configuration
             IRuntimeConfigurationManager RuntimeConfigurationManager = FacRef.GetIRuntimeConfigurationManager("localhost");
-            err = RuntimeConfigurationManager.ApplyConfigurationToCustomDevice(runtimeConfigurableSectionPath, configFilePath_Subset1);
+            err = RuntimeConfigurationManager.ApplyConfigurationToCustomDevice(runtimeConfigurableSectionPath, configFilePath_Subset1, timeout);
             ErrChk(err, "ApplyConfigurationToCustomDevice - Subset1");
 
             // Set and retrieve multiple channel values using the Client API - channels are now configured
@@ -65,7 +66,7 @@ namespace RuntimeConfigurationExecutionAPIExample
             GetAndPrintAliases(Workspace);
 
             // Reapply the configuration - Removes previously applied configuration and applies the new configuration
-            err = RuntimeConfigurationManager.ApplyConfigurationToCustomDevice(runtimeConfigurableSectionPath, configFilePath_Subset2);
+            err = RuntimeConfigurationManager.ApplyConfigurationToCustomDevice(runtimeConfigurableSectionPath, configFilePath_Subset2, timeout);
             ErrChk(err, "ApplyConfigurationToCustomDevice - Subset2");
 
             // Attempt to set or retrieve previously configured channel values using Client API - expected to fail
@@ -83,7 +84,7 @@ namespace RuntimeConfigurationExecutionAPIExample
             DisplayChannelValues(configuredOutputChannelNames_Subset2.Take(5).ToArray(), outputValues_Subset2, "Output Values - Subset2");
 
             // Remove the current configuration
-            err = RuntimeConfigurationManager.RemoveConfigurationFromCustomDevice(runtimeConfigurableSectionPath);
+            err = RuntimeConfigurationManager.RemoveConfigurationFromCustomDevice(runtimeConfigurableSectionPath, timeout);
             ErrChk(err, "RemoveConfigurationFromCustomDevice");
 
             // Attempt to set or retrieve old channel values using Client API - expected to fail
