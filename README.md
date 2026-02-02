@@ -3,17 +3,17 @@ The "Runtime Configuration Support Example" is a inline custom device, a simple 
 
 ## Development Version
 
-LabVIEW 2025
+LabVIEW 2026
 
 ## Dependencies
 
 ### Running the custom device
 
-- [VeriStand 2025 Q4 or later](https://www.ni.com/en-us/support/downloads/software-products/download.veristand.html)
+- [VeriStand 2026 Q1 or later](https://www.ni.com/en-us/support/downloads/software-products/download.veristand.html)
 
 ### Developing or building from source
 
-- [LabVIEW 2025 or later](https://www.ni.com/en-us/support/downloads/software-products/download.labview.html)
+- [LabVIEW 2026 or later](https://www.ni.com/en-us/support/downloads/software-products/download.labview.html)
 - [LabVIEW Real-Time Module](https://www.ni.com/en-us/support/downloads/software-products/download.labview-real-time-module.html)
 - [VeriStand Custom Device Development Tools](https://github.com/ni/niveristand-custom-device-development-tools)
   - Install the latest package from the [release page](https://github.com/ni/niveristand-custom-device-development-tools/releases)
